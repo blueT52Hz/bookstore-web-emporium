@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bookstore Web Emporium - Nơi mua sắm sách trực tuyến uy tín nhất Việt Nam">
+  <title>Bookstore Web Emporium</title>
+  
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Bookstore Web Emporium">
+  <meta property="og:description" content="Nơi mua sắm sách trực tuyến uy tín nhất Việt Nam">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span>Bookstore</span>
+      </a>
+      
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Trang Chủ</a>
+        <a href="pages/about.html" class="nav-link">Giới Thiệu</a>
+        <a href="pages/products.html" class="nav-link">Sản Phẩm</a>
+        <a href="pages/news.html" class="nav-link">Tin Tức</a>
+        <a href="pages/contact.html" class="nav-link">Liên Hệ</a>
+        <a href="pages/faq.html" class="nav-link">FAQ</a>
+        <a href="pages/careers.html" class="nav-link">Tuyển Dụng</a>
+      </nav>
+      
+      <div class="header-icons">
+        <a href="pages/search.html" aria-label="Tìm kiếm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <a href="pages/cart.html" aria-label="Giỏ hàng">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <a href="pages/login.html" aria-label="Đăng nhập">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span>Menu</span>
+      <button class="mobile-menu-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link active">Trang Chủ</a>
+      <a href="pages/about.html" class="mobile-nav-link">Giới Thiệu</a>
+      <a href="pages/products.html" class="mobile-nav-link">Sản Phẩm</a>
+      <a href="pages/news.html" class="mobile-nav-link">Tin Tức</a>
+      <a href="pages/contact.html" class="mobile-nav-link">Liên Hệ</a>
+      <a href="pages/faq.html" class="mobile-nav-link">FAQ</a>
+      <a href="pages/careers.html" class="mobile-nav-link">Tuyển Dụng</a>
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Banner -->
+    <section class="banner">
+      <!-- Banner Slide 1 -->
+      <div class="banner-slide active">
+        <img src="https://picsum.photos/id/1200/1200/700" alt="Khám Phá Thế Giới Qua Từng Trang Sách" class="banner-image">
+        <div class="banner-content">
+          <h2>Khám Phá Thế Giới Qua Từng Trang Sách</h2>
+          <p>Bookstore - Nơi Mang Đến Những Cuốn Sách Hay Nhất Cho Bạn</p>
+          <a href="pages/products.html" class="btn btn-primary">Khám phá ngay</a>
+        </div>
+      </div>
+      
+      <!-- Banner Slide 2 -->
+      <div class="banner-slide">
+        <img src="https://picsum.photos/id/1300/1200/700" alt="Ưu Đãi Đặc Biệt - Giảm Giá Tới 30%" class="banner-image">
+        <div class="banner-content">
+          <h2>Ưu Đãi Đặc Biệt - Giảm Giá Tới 30%</h2>
+          <p>Áp dụng cho đơn hàng từ 500.000đ từ ngày 01/10 - 15/10/2023</p>
+          <a href="pages/products.html" class="btn btn-primary">Mua ngay</a>
+        </div>
+      </div>
+      
+      <!-- Banner Slide 3 -->
+      <div class="banner-slide">
+        <img src="https://picsum.photos/id/1400/1200/700" alt="Sự Kiện Ra Mắt Sách Mới" class="banner-image">
+        <div class="banner-content">
+          <h2>Sự Kiện Ra Mắt Sách Mới</h2>
+          <p>Gặp gỡ tác giả và nhận bản ký tặng đặc biệt</p>
+          <a href="pages/news.html" class="btn btn-primary">Xem chi tiết</a>
+        </div>
+      </div>
+      
+      <!-- Banner Controls -->
+      <div class="banner-controls">
+        <span class="banner-dot active"></span>
+        <span class="banner-dot"></span>
+        <span class="banner-dot"></span>
+      </div>
+    </section>
+    
+    <!-- Welcome Section -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="text-center" style="max-width: 800px; margin: 0 auto;">
+          <h1 class="section-title">Chào Mừng Đến Với Bookstore</h1>
+          <p class="mb-6">
+            Bookstore là thiên đường dành cho những người yêu sách với hàng nghìn đầu sách thuộc mọi thể loại, 
+            từ văn học kinh điển đến sách thiếu nhi, sách kinh tế, tâm lý học và nhiều thể loại khác.
+            Chúng tôi cam kết mang đến cho bạn những cuốn sách hay nhất với chất lượng tốt nhất và giá cả phải chăng.
+          </p>
+          <div class="flex justify-center gap-4">
+            <a href="pages/about.html" class="btn btn-primary">
+              Giới Thiệu
+            </a>
+            <a href="pages/products.html" class="btn btn-secondary">
+              Khám Phá Sách
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Featured Books -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-primary" style="font-size: 1.75rem;">Sách Nổi Bật</h2>
+          <a href="pages/products.html" class="text-secondary flex items-center gap-1">
+            Xem tất cả
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+        
+        <div id="featured-books" class="grid grid-4">
+          <!-- Books will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Categories -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <h2 class="section-title">Danh Mục Sách</h2>
+        <div id="categories" class="grid grid-3">
+          <!-- Categories will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Two Columns: Best Sellers & New Releases -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="grid grid-2">
+          <!-- Best Sellers -->
+          <div>
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-primary" style="font-size: 1.5rem;">Sách Bán Chạy</h2>
+              <a href="pages/products.html?filter=best-sellers" class="text-secondary flex items-center gap-1">
+                Xem thêm
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div id="bestseller-books" class="grid grid-2">
+              <!-- Books will be populated by JavaScript -->
+            </div>
+          </div>
+          
+          <!-- New Releases -->
+          <div>
+            <div class="flex justify-between items-center mb-6">
+              <h2 class="text-primary" style="font-size: 1.5rem;">Sách Mới</h2>
+              <a href="pages/products.html?filter=new-releases" class="text-secondary flex items-center gap-1">
+                Xem thêm
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </a>
+            </div>
+            <div class="grid grid-2">
+              <!-- Book Card 1 -->
+              <div class="card book-card">
+                <img src="https://picsum.photos/seed/500/600/900" alt="Lược Sử Thời Gian" class="book-card-cover">
+                <div class="book-card-body">
+                  <h3 class="book-card-title">Lược Sử Thời Gian</h3>
+                  <p class="book-card-author">Stephen Hawking</p>
+                  <p class="book-card-price">115.000 ₫</p>
+                </div>
+              </div>
+              
+              <!-- Book Card 2 -->
+              <div class="card book-card">
+                <img src="https://picsum.photos/seed/900/600/900" alt="Điều Kỳ Diệu Của Thay Đổi Tư Duy" class="book-card-cover">
+                <div class="book-card-body">
+                  <h3 class="book-card-title">Điều Kỳ Diệu Của Thay Đổi Tư Duy</h3>
+                  <p class="book-card-author">Carol S. Dweck</p>
+                  <p class="book-card-price">95.000 ₫</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="section-padding bg-primary text-white">
+      <div class="container">
+        <h2 class="text-center mb-8" style="font-size: 2rem;">Tại Sao Chọn Bookstore?</h2>
+        <div class="grid grid-4">
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Đa Dạng Sách</h3>
+            <p>Hơn 50,000 đầu sách thuộc mọi thể loại, đáp ứng mọi nhu cầu đọc sách.</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.42 4.58a5.4 5.4 0 0 0-7.65 0l-.77.78-.77-.78a5.4 5.4 0 0 0-7.65 0C1.46 6.7 1.33 10.28 4 13l8 8 8-8c2.67-2.72 2.54-6.3.42-8.42z"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Dịch Vụ Tận Tâm</h3>
+            <p>Đội ngũ nhân viên am hiểu về sách, luôn sẵn sàng tư vấn và hỗ trợ.</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Giao Hàng Nhanh</h3>
+            <p>Giao hàng nhanh chóng và đảm bảo sách đến tay bạn trong tình trạng hoàn hảo.</p>
+          </div>
+          
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+              </svg>
+            </div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Cộng Đồng Đọc Sách</h3>
+            <p>Tham gia cộng đồng yêu sách sôi nổi với các sự kiện, workshop thường xuyên.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Recent News -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-primary" style="font-size: 1.75rem;">Tin Tức & Blog</h2>
+          <a href="pages/news.html" class="text-secondary flex items-center gap-1">
+            Xem tất cả
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </a>
+        </div>
+        
+        <div id="recent-news" class="grid grid-3">
+          <!-- News will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="text-center" style="max-width: 600px; margin: 0 auto;">
+          <h2 class="text-primary" style="font-size: 1.75rem; margin-bottom: 1rem;">Đăng Ký Nhận Thông Tin</h2>
+          <p class="mb-4">
+            Đăng ký để nhận thông tin về sách mới, sự kiện và ưu đãi đặc biệt từ Bookstore.
+          </p>
+          <form class="newsletter-form">
+            <input 
+              type="email" 
+              placeholder="Địa chỉ email của bạn" 
+              class="newsletter-input"
+              required
+            >
+            <button type="submit" class="btn btn-primary">
+              Đăng Ký
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Về Bookstore</h3>
+          <a href="pages/about.html" class="footer-link">Giới thiệu</a>
+          <a href="pages/careers.html" class="footer-link">Tuyển dụng</a>
+          <a href="pages/contact.html" class="footer-link">Liên hệ</a>
+          <a href="pages/faq.html" class="footer-link">Câu hỏi thường gặp</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách</h3>
+          <a href="#" class="footer-link">Chính sách bảo mật</a>
+          <a href="#" class="footer-link">Chính sách vận chuyển</a>
+          <a href="#" class="footer-link">Chính sách đổi trả</a>
+          <a href="#" class="footer-link">Quy định sử dụng</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+          <a href="#" class="footer-link">Phương thức thanh toán</a>
+          <a href="#" class="footer-link">Phương thức vận chuyển</a>
+          <a href="#" class="footer-link">Theo dõi đơn hàng</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Liên hệ</h3>
+          <p class="footer-link">Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+          <p class="footer-link">Email: info@bookstore.com</p>
+          <p class="footer-link">Hotline: 1900 1234</p>
+          <div class="flex gap-4 mt-4">
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bookstore Web Emporium. Tất cả các quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html> 

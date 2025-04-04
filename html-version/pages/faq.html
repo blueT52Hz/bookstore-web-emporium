@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - Bookstore Web Emporium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <span>Bookstore</span>
+      </a>
+      
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Trang Chủ</a>
+        <a href="about.html" class="nav-link">Giới Thiệu</a>
+        <a href="products.html" class="nav-link">Sản Phẩm</a>
+        <a href="news.html" class="nav-link">Tin Tức</a>
+        <a href="contact.html" class="nav-link">Liên Hệ</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+        <a href="careers.html" class="nav-link">Tuyển Dụng</a>
+      </nav>
+      
+      <div class="header-icons">
+        <a href="search.html" aria-label="Tìm kiếm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </a>
+        <a href="cart.html" aria-label="Giỏ hàng">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+        </a>
+        <a href="login.html" aria-label="Đăng nhập">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+        <button class="menu-toggle" aria-label="Menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <span>Menu</span>
+      <button class="mobile-menu-close">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav">
+      <a href="../index.html" class="mobile-nav-link">Trang Chủ</a>
+      <a href="about.html" class="mobile-nav-link">Giới Thiệu</a>
+      <a href="products.html" class="mobile-nav-link">Sản Phẩm</a>
+      <a href="news.html" class="mobile-nav-link">Tin Tức</a>
+      <a href="contact.html" class="mobile-nav-link">Liên Hệ</a>
+      <a href="faq.html" class="mobile-nav-link active">FAQ</a>
+      <a href="careers.html" class="mobile-nav-link">Tuyển Dụng</a>
+    </nav>
+  </div>
+  
+  <!-- Main Content -->
+  <main>
+    <!-- Page Banner -->
+    <section class="page-banner bg-light">
+      <div class="container text-center py-5">
+        <h1 class="mb-3">Câu Hỏi Thường Gặp</h1>
+        <p class="text-lg max-w-xl mx-auto">
+          Giải đáp những thắc mắc phổ biến nhất về dịch vụ và sản phẩm của chúng tôi.
+        </p>
+      </div>
+    </section>
+    
+    <!-- FAQ Categories -->
+    <section class="py-8 bg-white">
+      <div class="container">
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+          <a href="#" class="btn btn-outline-primary active">Tất Cả</a>
+          <a href="#" class="btn btn-outline-primary">Đặt Hàng</a>
+          <a href="#" class="btn btn-outline-primary">Vận Chuyển</a>
+          <a href="#" class="btn btn-outline-primary">Thanh Toán</a>
+          <a href="#" class="btn btn-outline-primary">Đổi Trả</a>
+          <a href="#" class="btn btn-outline-primary">Tài Khoản</a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- FAQ Content -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="max-w-3xl mx-auto">
+          <!-- FAQ Group 1 -->
+          <div class="mb-10">
+            <h2 class="text-xl font-bold mb-6">Về Đặt Hàng</h2>
+            
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Làm thế nào để đặt hàng trên website?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Để đặt hàng trên website của chúng tôi, bạn cần thực hiện các bước sau:
+                </p>
+                <ol class="list-decimal list-inside mt-2">
+                  <li>Tìm kiếm và chọn sản phẩm bạn muốn mua</li>
+                  <li>Nhấp vào nút "Thêm vào giỏ hàng"</li>
+                  <li>Vào giỏ hàng và kiểm tra đơn hàng</li>
+                  <li>Nhấp "Thanh toán" và điền thông tin giao hàng</li>
+                  <li>Chọn phương thức thanh toán và hoàn tất đơn hàng</li>
+                </ol>
+              </div>
+            </div>
+            
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Tôi có thể hủy đơn hàng sau khi đã đặt không?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Bạn có thể hủy đơn hàng trong vòng 24 giờ sau khi đặt hàng và trước khi đơn hàng được xử lý. Để hủy đơn hàng, bạn có thể đăng nhập vào tài khoản và chọn mục "Đơn hàng của tôi", sau đó nhấp vào nút "Hủy đơn hàng" bên cạnh đơn hàng bạn muốn hủy. Hoặc bạn có thể liên hệ trực tiếp với bộ phận Chăm sóc Khách hàng qua hotline 1900 1234.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ Group 2 -->
+          <div class="mb-10">
+            <h2 class="text-xl font-bold mb-6">Về Vận Chuyển</h2>
+            
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Thời gian giao hàng mất bao lâu?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Thời gian giao hàng phụ thuộc vào khu vực của bạn. Thông thường:
+                </p>
+                <ul class="list-disc list-inside mt-2">
+                  <li>Khu vực nội thành TP. HCM và Hà Nội: 1-2 ngày làm việc</li>
+                  <li>Các tỉnh thành khác: 3-5 ngày làm việc</li>
+                  <li>Khu vực vùng sâu, vùng xa: 5-7 ngày làm việc</li>
+                </ul>
+                <p class="mt-2">
+                  Lưu ý: Thời gian giao hàng có thể bị ảnh hưởng bởi các yếu tố như thời tiết, ngày lễ, hoặc sự cố giao thông.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ Group 3 -->
+          <div class="mb-10">
+            <h2 class="text-xl font-bold mb-6">Về Thanh Toán</h2>
+            
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Có những phương thức thanh toán nào được chấp nhận?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Chúng tôi chấp nhận nhiều phương thức thanh toán khác nhau, bao gồm:
+                </p>
+                <ul class="list-disc list-inside mt-2">
+                  <li>Thanh toán khi nhận hàng (COD)</li>
+                  <li>Thanh toán qua thẻ tín dụng/ghi nợ (Visa, Mastercard, JCB)</li>
+                  <li>Thanh toán qua ví điện tử (Momo, ZaloPay, VNPay)</li>
+                  <li>Chuyển khoản ngân hàng</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ Group 4 -->
+          <div class="mb-10">
+            <h2 class="text-xl font-bold mb-6">Về Đổi Trả</h2>
+            
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Chính sách đổi trả sản phẩm như thế nào?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Chúng tôi chấp nhận đổi trả sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng, với điều kiện sản phẩm còn nguyên vẹn, không có dấu hiệu đã qua sử dụng và còn đầy đủ bao bì, hóa đơn. Các trường hợp lỗi do nhà sản xuất, chúng tôi sẽ hỗ trợ đổi mới hoặc hoàn tiền 100%.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- FAQ Group 5 -->
+          <div>
+            <h2 class="text-xl font-bold mb-6">Về Tài Khoản</h2>
+            
+            <!-- FAQ Item 6 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Làm thế nào để tạo tài khoản trên website?
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="faq-icon">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Để tạo tài khoản trên website của chúng tôi, bạn cần thực hiện các bước sau:
+                </p>
+                <ol class="list-decimal list-inside mt-2">
+                  <li>Nhấp vào biểu tượng "Tài khoản" ở góc phải trên cùng của trang web</li>
+                  <li>Chọn "Đăng ký"</li>
+                  <li>Điền thông tin cá nhân và địa chỉ email của bạn</li>
+                  <li>Tạo mật khẩu</li>
+                  <li>Nhấp vào nút "Đăng ký" để hoàn tất</li>
+                </ol>
+                <p class="mt-2">
+                  Sau khi đăng ký, bạn sẽ nhận được email xác nhận. Hãy nhấp vào liên kết trong email để kích hoạt tài khoản của bạn.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Support -->
+        <div class="text-center mt-12 py-6 bg-white rounded-lg shadow-sm max-w-2xl mx-auto">
+          <h2 class="text-xl font-bold mb-4">Không tìm thấy câu trả lời?</h2>
+          <p class="mb-4">
+            Nếu bạn không tìm thấy câu trả lời cho câu hỏi của mình, hãy liên hệ với chúng tôi.
+          </p>
+          <a href="contact.html" class="btn btn-primary">
+            Liên Hệ Hỗ Trợ
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="text-center" style="max-width: 600px; margin: 0 auto;">
+          <h2 class="text-primary" style="font-size: 1.75rem; margin-bottom: 1rem;">Đăng Ký Nhận Thông Tin</h2>
+          <p class="mb-4">
+            Đăng ký để nhận thông tin về sách mới, sự kiện và ưu đãi đặc biệt từ Bookstore.
+          </p>
+          <form class="newsletter-form">
+            <input 
+              type="email" 
+              placeholder="Địa chỉ email của bạn" 
+              class="newsletter-input"
+              required
+            >
+            <button type="submit" class="btn btn-primary">
+              Đăng Ký
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3>Về Bookstore</h3>
+          <a href="about.html" class="footer-link">Giới thiệu</a>
+          <a href="careers.html" class="footer-link">Tuyển dụng</a>
+          <a href="contact.html" class="footer-link">Liên hệ</a>
+          <a href="faq.html" class="footer-link">Câu hỏi thường gặp</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Chính sách</h3>
+          <a href="#" class="footer-link">Chính sách bảo mật</a>
+          <a href="#" class="footer-link">Chính sách vận chuyển</a>
+          <a href="#" class="footer-link">Chính sách đổi trả</a>
+          <a href="#" class="footer-link">Quy định sử dụng</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Hỗ trợ khách hàng</h3>
+          <a href="#" class="footer-link">Hướng dẫn mua hàng</a>
+          <a href="#" class="footer-link">Phương thức thanh toán</a>
+          <a href="#" class="footer-link">Phương thức vận chuyển</a>
+          <a href="#" class="footer-link">Theo dõi đơn hàng</a>
+        </div>
+        
+        <div class="footer-column">
+          <h3>Liên hệ</h3>
+          <p class="footer-link">Địa chỉ: 123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+          <p class="footer-link">Email: info@bookstore.com</p>
+          <p class="footer-link">Hotline: 1900 1234</p>
+          <div class="flex gap-4 mt-4">
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="footer-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2023 Bookstore Web Emporium. Tất cả các quyền được bảo lưu.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // FAQ Page Specific JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // FAQ Accordion Functionality
+      const faqQuestions = document.querySelectorAll('.faq-question');
+      
+      faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+          // Toggle active class
+          this.classList.toggle('active');
+          
+          // Toggle display of answer
+          const answer = this.nextElementSibling;
+          if (answer.style.maxHeight) {
+            answer.style.maxHeight = null;
+          } else {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
